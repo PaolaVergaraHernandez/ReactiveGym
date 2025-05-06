@@ -1,0 +1,32 @@
+/* Estilo del logotipo */
+.brand-logo {
+  width: 100px; 
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo global del cuerpo */
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* Variables de colores */
+:root {
+  --primary-color: #605DC8;
+  --secondary-color: #8B89E6;
+  --accent-color: #e8e7fa;
+  --shadow-color: #E8E8E8;
+}
+
+/* Estilo del botón principal */
+button.primary {
+  padding: 10px;
+  border: solid 1px var(--primary-color);
+  background: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+}
+
+
+ 

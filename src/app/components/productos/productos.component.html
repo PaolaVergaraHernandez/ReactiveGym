@@ -1,0 +1,25 @@
+<div class="banner-container">
+  <img src="assets/789.png" alt="Banner Productos" class="banner-img">
+
+</div>
+
+<div class="container mt-4">
+    <div class="mb-4 d-flex justify-content-center">
+ <input
+  type="text"
+  [(ngModel)]="searchText"
+  (input)="search()"
+  placeholder="Buscar productos"
+  class="search-bar"
+  />
+  </div>
+</div>
+  
+    <!-- 🃏 Cards filtradas -->
+    <div class="row">
+      <div class="col-md-4 mb-4" *ngFor="let location of filteredLocationList">
+        <app-housing-location [housingLocation]="location"> </app-housing-location>
+      </div>
+    </div>
+    
+  

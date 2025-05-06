@@ -1,0 +1,22 @@
+
+
+<div class="card-container">
+    <div class="card-product">
+      <img class="product-image" [src]="housingLocation.photo" alt="{{ housingLocation.name }}" />
+  
+      <div class="product-info">
+        <h3 class="product-name">{{ housingLocation.name }}</h3>
+        <p class="product-category">{{ housingLocation.city }}</p>
+        <p class="product-description">{{ housingLocation.description }}</p>
+        <p class="product-price">{{ housingLocation.price }}</p>
+  
+        <span class="product-availability" [class.available]="housingLocation.available" [class.unavailable]="!housingLocation.available">
+          {{ housingLocation.available ? 'Disponible' : 'Agotado' }}
+        </span>
+  
+        <a [routerLink]="['/details', housingLocation.id]" class="add-to-cart-btn">Ver más</a>
+      </div>
+    </div>
+  </div>
+  
+
